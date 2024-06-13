@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/etEntryTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="入校时间"/>
+
+    <EditText
+        android:id="@+id/etCampus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="目的地校区"/>
+
+    <EditText
+        android:id="@+id/etCar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="是否开车"/>
+
+    <EditText
+        android:id="@+id/etCompanions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="是否有亲友"/>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提交"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>
