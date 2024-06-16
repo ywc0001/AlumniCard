@@ -16,7 +16,7 @@ data class User(val username: String, val email: String, val phone: String)
 
 class UserPageViewModel : ViewModel() {
     private val _userData = MutableLiveData<User>().apply {
-        value = User("johndoe", "john.doe@example.com", "123-456-7890")
+        value = User("张三", "zhangsan@example.com", "123-456-7890")
     }
     val userData: LiveData<User> = _userData
 

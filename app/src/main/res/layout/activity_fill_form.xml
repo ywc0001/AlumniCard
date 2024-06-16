@@ -1,39 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+>
 
+    <!-- 入校申请表标题 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="入校申请表"
+        android:textSize="20sp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- 入校时间 -->
     <EditText
         android:id="@+id/etEntryTime"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="入校时间"/>
 
+    <!-- 目的地校区 -->
     <EditText
         android:id="@+id/etCampus"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="目的地校区"/>
 
-    <EditText
-        android:id="@+id/etCar"
-        android:layout_width="match_parent"
+    <!-- 是否开车 -->
+    <CheckBox
+        android:id="@+id/cbDriving"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="是否开车"/>
+        android:text="是否开车"/>
 
-    <EditText
-        android:id="@+id/etCompanions"
-        android:layout_width="match_parent"
+    <!-- 是否有亲友 -->
+    <CheckBox
+        android:id="@+id/cbWithFriends"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="是否有亲友"/>
+        android:text="是否有亲友"/>
 
+    <!-- 提交按钮 -->
     <Button
         android:id="@+id/btnSubmit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="提交"
-        android:layout_gravity="center"
-        android:layout_marginTop="16dp"/>
+        android:text="提交"/>
+
+    <!-- 预约成功消息 -->
+    <TextView
+        android:id="@+id/tvSuccessMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="预约成功"
+        android:textSize="18sp"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"/>
 </LinearLayout>
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:orientation="vertical"-->
+<!--    android:padding="16dp">-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/etEntryTime"-->
+<!--        android:layout_width="350dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:inputType="date"-->
+<!--        android:hint="入校时间"/>-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/etCampus"-->
+<!--        android:layout_width="350dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:inputType="text"-->
+<!--        android:hint="目的地校区"/>-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/etCar"-->
+<!--        android:layout_width="350dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:inputType="text"-->
+<!--        android:hint="是否开车"/>-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/etCompanions"-->
+<!--        android:layout_width="350dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:inputType="text"-->
+<!--        android:hint="是否有亲友"/>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btnSubmit"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="提交"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginTop="16dp"/>-->
+<!--</LinearLayout>-->

@@ -1,73 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:padding="16dp"
     tools:context=".UserAccountFragment">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/user_portrait"
-        android:layout_gravity="center"/>
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+
+        android:src="@drawable/user_portrait" />
 
     <TextView
         android:id="@+id/tvUsername"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Username"
-        android:textSize="18sp"
         android:layout_gravity="center"
         android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"/>
+        android:layout_marginBottom="8dp"
+        android:text="张三"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/tvEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Email: user@example.com"
-        android:textSize="16sp"
         android:layout_gravity="center"
-        android:layout_marginBottom="8dp"/>
+        android:layout_marginBottom="8dp"
+        android:text="Email: user@example.com"
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/tvPhone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Phone: 123-456-7890"
-        android:textSize="16sp"
         android:layout_gravity="center"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginBottom="16dp"
+        android:text="Phone: 123-456-7890"
+        android:textSize="16sp" />
 
     <Button
         android:id="@+id/btnEditProfile"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Edit Profile"
-        android:layout_marginBottom="8dp"/>
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:text="编辑资料" />
 
     <Button
         android:id="@+id/btnViewHistory"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="View History"
-        android:layout_marginBottom="8dp"/>
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="center"
+        android:text="阅读历史" />
 
     <Button
         android:id="@+id/btnChangePassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Change Password"
-        android:layout_marginBottom="16dp"/>
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center"
+        android:text="修改密码" />
 
     <Button
         android:id="@+id/btnLogout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Logout"
-        android:layout_marginTop="16dp"/>
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"
+        android:text="退出登录" />
 </LinearLayout>
 
     <!--<?xml version="1.0" encoding="utf-8"?>-->
