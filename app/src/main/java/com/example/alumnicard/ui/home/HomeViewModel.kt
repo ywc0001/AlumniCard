@@ -16,7 +16,7 @@ import androidx.lifecycle.ViewModel
 class HomeViewModel : ViewModel() {
 
     private val _alumniCardInfo = MutableLiveData<AlumniCard>().apply {
-        value = AlumniCard("12345678", "张三", "计算机科学与技术", "2020")
+        value = AlumniCard("12345678", "张三", "软件学院", "2020")
     }
     val alumniCardInfo: LiveData<AlumniCard> = _alumniCardInfo
 }

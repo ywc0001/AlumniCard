@@ -13,20 +13,21 @@
         android:layout_height="wrap_content"
         android:text="入校申请表"
         android:textSize="20sp"
+        android:textStyle="bold"
         android:layout_marginBottom="16dp"/>
 
     <!-- 入校时间 -->
     <EditText
         android:id="@+id/etEntryTime"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
         android:hint="入校时间"/>
 
     <!-- 目的地校区 -->
     <EditText
         android:id="@+id/etCampus"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
         android:hint="目的地校区"/>
 
     <!-- 是否开车 -->

@@ -65,7 +65,6 @@ class HomeFragment : Fragment() {
             val intent = Intent(activity, FillFormActivity::class.java)
             startActivity(intent)
         }
-
         return root
     }
     override fun onDestroyView() {
